@@ -3,10 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Hult Test</title>
+  <script src="https://fb.me/react-15.2.1.min.js"></script>
+	<script src="https://fb.me/react-dom-15.2.1.min.js"></script>
+	<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eos eaque, nihil voluptate illum reprehenderit laborum voluptatem perferendis ipsam, debitis alias voluptas ut at veritatis inventore repellat distinctio, error eum.</p>
 </body>
 </html>
+
+<script type="text/jsx">
+	var HelloWorld = React.createClass({
+		render: function() {
+		return <div>Hello World!</div>
+		}
+	});
+
+	var element = React.createElement(HelloWorld);
+
+	ReactDOM.render(element, document.body);
+</script>
