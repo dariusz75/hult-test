@@ -15,29 +15,44 @@
   font-family: "Proxima N W01 Bold";
   src: url("Fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix");
   src: url("Fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix") format("eot"), url("Fonts/0d416408-95c6-4ad7-b08d-e60573d3b37d.woff2") format("woff2"), url("Fonts/d999c07b-a049-4eb5-b8a6-4f36ae25e67e.woff") format("woff"), url("Fonts/4d4a75f5-d32a-4a09-8665-133afd39cc37.ttf") format("truetype"), url("Fonts/8152bc4e-d700-4c78-b6be-326893e6f53f.svg#8152bc4e-d700-4c78-b6be-326893e6f53f") format("svg"); }
-.thumbnail h4 {
-  font-family: "Bembo W01", "Times New Roman", Serif; }
-  .thumbnail h4 span {
-    color: #aeaeae; }
-.thumbnail .month {
-  font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
-  position: relative;
-  top: -210px; }
-.thumbnail .city {
-  font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
-  position: relative;
-  top: -90px; }
-.thumbnail .country {
-  font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
-  position: relative;
-  top: -90px; }
-.thumbnail h3 {
-  font-family: "Bembo W01", "Times New Roman", Serif;
-  position: relative;
-  top: -90px; }
-.thumbnail .description {
-  font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
-  position: relative;
-  top: -90px; }
+.thumbnails-wrapper {
+  padding: 0 10%; }
+
+.thumbnail {
+  height: 520px; }
+  .thumbnail h4 {
+    font-family: "Bembo W01", "Times New Roman", Serif; }
+    .thumbnail h4 span {
+      color: #aeaeae; }
+  .thumbnail .month {
+    font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
+    position: relative;
+    top: -202px;
+    left: 15px;
+    color: #fff;
+    font-size: 18px; }
+  .thumbnail .city {
+    font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
+    position: relative;
+    top: -92px;
+    left: 15px;
+    color: #fff;
+    font-size: 24px; }
+  .thumbnail .country {
+    font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
+    position: relative;
+    top: -107px;
+    left: 15px;
+    color: #fff;
+    font-size: 14px; }
+  .thumbnail h3 {
+    font-family: "Bembo W01", "Times New Roman", Serif;
+    position: relative;
+    top: -90px;
+    margin-top: 0; }
+  .thumbnail .description {
+    font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
+    position: relative;
+    top: -90px; }
 
 /*# sourceMappingURL=styles.css.map */
