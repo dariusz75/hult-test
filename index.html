@@ -7,21 +7,104 @@
   <script src="https://fb.me/react-15.2.1.min.js"></script>
 	<script src="https://fb.me/react-dom-15.2.1.min.js"></script>
 	<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eos eaque, nihil voluptate illum reprehenderit laborum voluptatem perferendis ipsam, debitis alias voluptas ut at veritatis inventore repellat distinctio, error eum.</p>
+	<div class="container">
+  	<div class="row thumbnails-wrapper"></div>
+  </div>
 </body>
 </html>
 
 <script type="text/jsx">
-	var HelloWorld = React.createClass({
+
+
+	var Badge = React.createClass({
 		render: function() {
-		return <div>Hello World!</div>
+			return 	<button className="btn btn-primary" type="button">
+  						{this.props.title}<span className="badge">{this.props.number}</span>
+							</button>
 		}
 	});
 
-	var element = React.createElement(HelloWorld);
 
-	ReactDOM.render(element, document.body);
+	var Thumbnail = React.createClass({
+		render: function() {
+			return 	<div className="col-sm-6 col-md-4">
+								<div className="thumbnail">
+									<h4>{this.props.header}<span>{this.props.span}</span></h4>
+									<img src={this.props.imageUrl} />
+									<p className="month">{this.props.month}</p>
+									<p className="city">{this.props.city}</p>
+									<p className="country">{this.props.country}</p>
+		    					<div className="caption">
+			      				<h3>{this.props.title}</h3>
+			      				<p className="description">{this.props.descritption}</p>
+		    					</div>
+		  					</div>
+		  				</div>
+		}
+	});
+
+
+	var ThumbnailList = React.createClass({
+		render: function() {
+			var list = this.props.thumbnailData.map(function(thumbnailProps){
+				return <Thumbnail {...thumbnailProps} />
+			});
+			return 	<div>
+							{list}
+							</div>;
+		}
+	});
+
+	var options = {
+	thumbnailData: [{
+		header: 'Module A-C',
+		span: ' (home)',
+		month: 'September - May',
+		city: 'London',
+		country: 'United Kingdom',
+		title: 'Your home campus',
+		descritption: 'Students can choose from five home campuses – Boston, San Francisco, London, or Dubai. Your home campus is where you complete the core of your studies and where you’ll be based for about ten months of the year. You can choose to stay at your home campus for the entire length of your program if you prefer not to rotate.',
+		imageUrl: 'img/module-A-C.jpg'
+		},
+		{
+		header: 'Module E',
+		month: 'June',
+		city: 'San Francisco',
+		country: 'Unites States of America',
+		title: 'Your first rotation',
+		descritption: 'In your penultimate module, Module D, you have the option of taking electives and spending six weeks at any of Hult’s home campuses, or our rotation centers in Shanghai and New York. You can choose to stay for the next module and extend your stay to twelve weeks if you prefer to only rotate once.',
+		imageUrl: 'img/module-D.jpg'
+		},
+		{
+		header: 'Module D',
+		month: 'August',
+		city: 'Dubai',
+		country: 'United Arab Emirates',
+		title: 'Where to next?',
+		descritption: 'For your final module, Module E, you can choose to take electives and spend six weeks at any of Hult’s seven campuses worldwide. That includes all five of our home campuses, and our rotation centers in Shanghai, New York, and Ashridge Estate, U.K.',
+		imageUrl: 'img/module-E.jpg'
+		}]
+};
+
+
+	var element = React.createElement(ThumbnailList, options);
+
+	ReactDOM.render(element, document.querySelector('.thumbnails-wrapper'));
+
 </script>
