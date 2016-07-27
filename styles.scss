@@ -76,7 +76,7 @@ header {
 	.month {
 		font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
 		position: relative;
-		top: -202px;
+		top: -222px;
 		left: 15px;
 		color: $white;
 		font-size: 18px;
@@ -117,14 +117,4 @@ header {
 	p{
 		padding: 0;
 	}
-}
-
-.footer {
-	padding: 0;
-	background-color: grey;
-	height: 400px;
-	width: 100%;
-	display: block;
-	background-image: url("img/footer.jpg");
-
 }
