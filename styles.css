@@ -81,4 +81,17 @@ header {
     position: relative;
     top: -90px; }
 
+.prefooter {
+  padding: 0 10%; }
+  .prefooter p {
+    padding: 0; }
+
+.footer {
+  padding: 0;
+  background-color: grey;
+  height: 400px;
+  width: 100%;
+  display: block;
+  background-image: url("img/footer.jpg"); }
+
 /*# sourceMappingURL=styles.css.map */

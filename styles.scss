@@ -112,3 +112,19 @@ header {
 	
 }
 
+.prefooter {
+	padding: 0 10%;
+	p{
+		padding: 0;
+	}
+}
+
+.footer {
+	padding: 0;
+	background-color: grey;
+	height: 400px;
+	width: 100%;
+	display: block;
+	background-image: url("img/footer.jpg");
+
+}
