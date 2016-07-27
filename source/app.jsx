@@ -1,3 +1,6 @@
+var React = require('react');
+var ThumbnailsList = require('./thumbnailsList');
+
 	var options = {
 	thumbnailData: [{
 		header: 'Module A-C',
@@ -31,7 +34,6 @@
 		}]
 };
 
-
-	var element = React.createElement(ThumbnailList, options);
+	var element = React.createElement(ThumbnailsList, options);
 
 	ReactDOM.render(element, document.querySelector('.thumbnails-wrapper'));

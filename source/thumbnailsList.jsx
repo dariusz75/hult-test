@@ -1,6 +1,7 @@
-var Thumbnail = require('thumbnail.jsx');
+var React = require('react');
+var Thumbnail = require('./thumbnail')
 
-var ThumbnailList = React.createClass({
+var ThumbnailsList = React.createClass({
 		render: function() {
 			var list = this.props.thumbnailData.map(function(thumbnailProps){
 				return <Thumbnail {...thumbnailProps} />
@@ -10,3 +11,5 @@ var ThumbnailList = React.createClass({
 							</div>;
 		}
 	});
+
+module.exports = ThumbnailsList;
