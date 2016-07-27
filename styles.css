@@ -15,6 +15,32 @@
   font-family: "Proxima N W01 Bold";
   src: url("Fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix");
   src: url("Fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix") format("eot"), url("Fonts/0d416408-95c6-4ad7-b08d-e60573d3b37d.woff2") format("woff2"), url("Fonts/d999c07b-a049-4eb5-b8a6-4f36ae25e67e.woff") format("woff"), url("Fonts/4d4a75f5-d32a-4a09-8665-133afd39cc37.ttf") format("truetype"), url("Fonts/8152bc4e-d700-4c78-b6be-326893e6f53f.svg#8152bc4e-d700-4c78-b6be-326893e6f53f") format("svg"); }
+body {
+  padding: 0;
+  margin: 0; }
+
+header {
+  padding: 0;
+  margin: 0; }
+  header img {
+    width: 100%; }
+
+.top-wrapper {
+  padding: 0 10%; }
+  .top-wrapper p:nth-child(1) {
+    padding: 10px 0 20px 0;
+    font-size: 14px; }
+    .top-wrapper p:nth-child(1) span {
+      color: #aeaeae; }
+  .top-wrapper p:nth-child(2) {
+    padding: 10px 0 10px 0;
+    font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
+    font-size: 38px; }
+  .top-wrapper p:nth-child(3) {
+    padding: 0 0 40px 0;
+    font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
+    font-size: 16px; }
+
 .thumbnails-wrapper {
   padding: 0 10%; }
 

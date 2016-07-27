@@ -24,6 +24,42 @@ src:url("Fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix") format("eot"),u
 $white: #fff;
 $grey-light: #aeaeae;
 
+body {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	padding: 0;
+	margin: 0;
+	img {
+		width: 100%;
+	}
+}
+
+.top-wrapper {
+	padding: 0 10%;
+
+	p:nth-child(1) {
+		padding: 10px 0 20px 0;
+		font-size: 14px;
+		span {
+			color: $grey-light;
+		}
+	}
+	p:nth-child(2) {
+		padding: 10px 0 10px 0;
+    font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
+    font-size: 38px;
+	}
+	p:nth-child(3) {
+		padding: 0 0 40px 0;
+    font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
+    font-size: 16px;
+	}
+	
+	
+}
 
 .thumbnails-wrapper {
 	padding: 0 10%;
